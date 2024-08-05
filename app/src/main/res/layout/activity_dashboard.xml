@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medstockpro_app_bg"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:text="MedStockPro"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:text="Welcome!"
+        android:id="@+id/title2"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/add_stock_btn"
+        android:layout_below="@+id/title2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Add Stock"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:background="@drawable/btn_bg"/>
+
+    <Button
+        android:id="@+id/add_patient_btn"
+        android:layout_below="@+id/title2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/add_stock_btn"
+        android:text="Add Patient"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:background="@drawable/btn_bg"/>
+
+    <Button
+        android:id="@+id/write_pres_btn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/add_stock_btn"
+        android:text="Write Prescription"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:background="@drawable/btn_bg"/>
+
+    <Button
+        android:id="@+id/view_patient_btn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/add_patient_btn"
+        android:layout_toRightOf="@+id/write_pres_btn"
+        android:text="View Patients"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:background="@drawable/btn_bg"/>
+
+    <Button
+        android:id="@+id/dash_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

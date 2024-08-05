@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/medstockpro_app_bg"
+    tools:context=".AddPatient">
+
+    <TextView
+        android:text="Patient Details"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"/>
+
+    <EditText
+        android:id="@+id/patient_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"/>
+
+    <EditText
+        android:id="@+id/patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="National ID"/>
+
+    <EditText
+        android:id="@+id/patient_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <Button
+        android:id="@+id/add_patient_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add Patient"
+        android:onClick="addPatient"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/medstockpro_app_bg"
+    tools:context=".AddStock">
+
+    <TextView
+        android:text="Add Medicine"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Medicine" />
+
+    <ListView
+        android:id="@+id/medicine_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/addMedicineButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add Medicine"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Email Address"
+        android:layout_marginBottom="20dp"
+        android:textColor="#00AEAE"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:text="@string/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="150dp" />
+
+
+
+</LinearLayout>
